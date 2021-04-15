@@ -1,0 +1,19 @@
+.BadgeNew__hero,
+.BadgeEdit__hero {
+  width: 100%;
+  padding: 2rem 0;
+  background: url("../../images/stars.svg"), #1b1b25;
+  background-repeat: repeat;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.imgnav {
+  width: 150px;
+  height: 150px;
+}
+.container {
+  padding-bottom: 20px;
+}
