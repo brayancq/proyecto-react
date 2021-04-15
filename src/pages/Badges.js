@@ -9,11 +9,15 @@ import NotFound from "../pages/NotFound";
 import api from "../api";
 import "./styles/Skeleton.css";
 class Badges extends React.Component {
-  state = {
-    loading: true,
-    error: null,
-    data: undefined,
-  };
+  constructor(props) {
+    super(props);
+    console.log("construtor");
+    this.state = {
+      loading: true,
+      error: null,
+      data: [],
+    };
+  }
 
   componentDidMount() {
     this.fetchData();
