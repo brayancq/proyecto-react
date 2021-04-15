@@ -4,7 +4,7 @@ import "./styles/BadgeNew.css";
 import header from "../images/logo2.svg";
 import Badge from "../components/Badge";
 import BadgeForm from "../components/BadgeForm";
-import Loader from "../components/Loader";
+import PageLoading from "../components/PageLoading";
 
 import api from "../api";
 import "./styles/Skeleton.css";
@@ -44,7 +44,7 @@ class BadgeNew extends React.Component {
 
   render() {
     if (this.state.loading) {
-      return <Loader />;
+      return <PageLoading />;
     }
     return (
       <React.Fragment>
